@@ -1,0 +1,50 @@
+.caixa{
+    margin-top: 5%;
+    margin-left: 10%;
+    padding: 10px;
+}
+
+.caixa img{
+    width: 100%;
+}
+
+.login-formulario h1{
+    font-size: 3em;
+    letter-spacing: 0.03em;
+}
+
+.login-formulario{
+    display: flex;
+    
+    flex-flow: column nowrap;
+    width: 80%;
+    height: 80%;
+    padding-left: 20%;
+    padding-top: 10%;
+    color: #FDFDFD;
+}
+.login-formulario input{
+    padding: 10px 10px;
+    margin: 20px 0px;
+    border-radius: 28px;
+}
+
+.login-formulario .buttons{ 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.buttons Button{
+    background-color: #F36B53;
+    padding: 10px 20%;
+    border-radius: 28px;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+}
+.link:hover{
+    color:thistle;
+}

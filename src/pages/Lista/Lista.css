@@ -1,0 +1,34 @@
+.caixa-lista{
+    position: absolute;
+    max-width: 80%;
+    min-width: 20vw;
+    background-color: white;
+    box-shadow: inset 5px -6.94236px 6.94236px rgba(0, 0, 0, 0.25);
+
+    margin: 0 10%;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.cabecalho{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 186px;
+}
+
+.cabecalho img{
+    position: absolute;
+    width: 262px;
+    margin: 10px auto;
+}
+.botoes{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.botoes Button{
+    height: 7vh;
+    margin: 10px;
+    border-radius: 30px;
+}

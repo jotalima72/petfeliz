@@ -1,0 +1,19 @@
+.caixa{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    min-width: 80%;
+    min-height: 80vh;
+    position: absolute;
+    box-shadow: 0px 6.94236px 6.94236px rgba(0, 0, 0, 0.25);
+}
+
+.esquerda{
+    width: 40%;
+    min-width: 280px;
+    background: white;
+}
+.direita{
+    background: rgba(8, 99, 205, 1);
+    width: 60%;
+    min-width: 350px;
+}

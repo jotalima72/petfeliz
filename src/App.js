@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Routes from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div id='elipse1' className="ellipse"/>
+      <div id='elipse2' className="ellipse"/>
+      <div id='elipse3' className="ellipse"/>
+      <div id='elipse4' className="ellipse"/>
+      <div id='elipse5' className="ellipse"/>
+      <Routes/>
+      
     </div>
   );
 }
