@@ -3,10 +3,24 @@ import Button from '@material-ui/core/Button'
 import imagemAnimal from '../../images/fotoPet.png';
 import './pet.css';
 import data from '../Lista/components/DAO.json';
-import {useParams} from 'react-router-dom';
+import {useParams, useHistory} from 'react-router-dom';
 
-function Pet(props){
+const Pet = (props) =>{
     let { index } = useParams();
+    let history = useHistory();
+
+    function cadastrarPet(){
+        history.push('/cadastraPet');
+    }
+
+    function sair(){
+        history.push('/');
+    }
+
+    function voltarButton(){
+        history.push('/lista');
+    }
+
     return(
         <div className='corpo-pets'>
             <div className='cabecalho-pet'>
@@ -25,8 +39,8 @@ function Pet(props){
                 </div>
             </div>
             <div className='button-line'>
-                <Button variant="contained" color="primary">cadastrar pet</Button>
-                <Button variant="contained" color="secondary">sair</Button>
+                <Button onClick={cadastrarPet} variant="contained" color="primary">cadastrar pet</Button>
+                <Button onClick={sair} variant="contained" color="secondary">sair</Button>
             </div>
             <div className='conteudo-pet'>
                 <h1>Por que adotar?</h1>
@@ -44,7 +58,9 @@ function Pet(props){
                 <br/>
                 <br/>
             </div>
-                
+            <div className='botao-voltar'>
+                <Button onClick={voltarButton} variant="outlined" color="primary">Voltar</Button>
+            </div>
 
         </div>
     );

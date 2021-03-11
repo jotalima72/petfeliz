@@ -29,6 +29,14 @@
     border-radius: 28px;
 }
 
+.login-formulario textarea{
+    padding: 20px 10px;
+    margin: 20px 0px;
+    min-height: 150px;
+    border-radius: 28px;
+    resize: none;
+}
+
 .login-formulario .buttons{ 
     display: flex;
     flex-flow: column nowrap;
@@ -47,4 +55,10 @@
 }
 .link:hover{
     color:thistle;
+}
+
+#mudaFoto{
+    color: white;
+    border: white 1px dotted;
+    
 }

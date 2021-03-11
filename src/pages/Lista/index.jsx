@@ -3,11 +3,21 @@ import './Lista.css';
 import imagem from '../../images/logoPequena.png';
 import Button from '@material-ui/core/Button';
 import Animal from './components/animais';
-import dataDAO from './components/DAO.json'
+import dataDAO from './components/DAO.json';
+import {useHistory} from 'react-router-dom';
 
 const data = dataDAO;
 
-function lista(){
+function Lista(){
+
+    const history = useHistory();
+
+    function cadastrarPet(){
+        history.push('/cadastraPet');
+    }
+    function sair(){
+        history.push('/');
+    }
     return (
         <div className='caixa-lista'>
             <div className='cabecalho'>
@@ -15,8 +25,8 @@ function lista(){
                     <img src={imagem} alt="PetFeliz"/> 
                 </div>
                 <div className='botoes'>
-                    <Button variant="contained" color="primary">cadastrar pet</Button>
-                    <Button variant="contained" color="secondary">sair</Button>
+                    <Button onClick={cadastrarPet} variant="contained" color="primary">cadastrar pet</Button>
+                    <Button onClick={sair} variant="contained" color="secondary">sair</Button>
                 </div>
             </div>
             <br/>
@@ -33,4 +43,4 @@ function lista(){
     );
 }
 
-export default lista;
+export default Lista;

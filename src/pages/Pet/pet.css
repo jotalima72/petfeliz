@@ -51,3 +51,11 @@
     margin:  5px 10%;
     text-align: justify;
 }
+
+.botao-voltar{
+    margin: 0 auto 200px auto;
+}
+.botao-voltar button{
+    padding: 5px 200px;
+    border-radius: 20px;
+}
