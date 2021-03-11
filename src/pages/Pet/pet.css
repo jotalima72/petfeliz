@@ -1,4 +1,4 @@
-.caixa-lista{
+.corpo-pets{
     position: absolute;
     max-width: 80%;
     min-width: 20vw;
@@ -12,35 +12,42 @@
     flex-flow: column nowrap;
 }
 
-.caixa-lista input{
-    margin: 0 20%;
-    padding: 10px 20px;
-    border-radius: 20px;
-}
-
-.cabecalho{
+.imagem-pet-cabecalho{
     display: flex;
-    flex-flow: row nowrap;
-    height: 186px;
     justify-content: center;
+    margin: 30px;
+    
+}
+.imagem-pet-cabecalho img{
+    width: 20vw;
 }
 
-.cabecalhoImagem{
-    padding-left: 35%;
-    width: 262px;
-    margin: 10px auto;
+.cabecalho-pet{
+    background-color: rgba(8, 99, 205, 0.79);
+    width: 80vw;
+    display: flex;
+    flex-flow: column nowrap;
 }
-.botoes{
+
+.button-line{
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
-.botoes Button{
+.button-line Button{
     height: 7vh;
     margin: 10px;
     border-radius: 30px;
 }
 
-.conteudo{
-    padding-top: 20px;
+.cabecalho-nome{
+    color: white;
+    margin: 10px 20px;
+    letter-spacing: 0.03em;
+    font-size: 1.2em;
+}
+
+.conteudo-pet{
+    margin:  5px 10%;
+    text-align: justify;
 }

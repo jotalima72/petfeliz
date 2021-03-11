@@ -1,15 +1,18 @@
 import React, {useState} from 'react';
 import '../../Login/login.css';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 
 const Formulario2 = (props)=> {
     const [telefone, setTelefone] = useState('');
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
+    
+    let history = useHistory();
 
     function clickCadastro(e){
         console.log(`${telefone} ${email} - ${senha}`);
+        history.push('/lista');
     }
     return(
         <div className="login-formulario">

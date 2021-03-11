@@ -1,0 +1,18 @@
+.corpo{
+    margin: 10px 10em;
+    min-width: 80vw;
+}
+.link-animais{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.link-animais:hover{
+    color:#4EBDEA;
+}
+
+.conteudo-animal{
+    padding: 20px 40px;
+}
